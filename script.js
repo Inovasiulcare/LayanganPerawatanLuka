@@ -96,8 +96,10 @@ function showNurseSelection(service) {
     // Update onclick buttons with service
     const buttons = modal.querySelectorAll('.nurse-option button');
     buttons.forEach(button => {
-        const phone = button.getAttribute('onclick').match(/'(\d+)'/)[1];
-        button.setAttribute('onclick', `contactWAWithNumber('${phone}', '${service}')`);
+        const phone = button.dataset.phone; // expect digits e.g. 62812...
+        if (phone) {
+            button.onclick = function() { contactWAWithNumber(phone, service); };
+        }
     });
 }
 
