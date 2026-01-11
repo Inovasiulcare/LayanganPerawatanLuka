@@ -120,3 +120,8 @@ window.onclick = function(event) {
         modal.classList.remove('show');
     }
 }
+
+// Fungsi untuk membuka PDF Edukasi
+function openPDF() {
+    window.open('Luka Diabetes (Ulkus Diabetikum.pdf', '_blank');
+}
