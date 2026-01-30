@@ -126,7 +126,7 @@ function openPDF() {
     window.open('Luka Diabetes (Ulkus Diabetikum.pdf', '_blank');
 }
 
-// Fungsi untuk membuka video perawatan (link Mega.nz)
+// Fungsi untuk membuka video perawatan (link Google Drive)
 function openVideo() {
-    window.open('https://mega.nz/file/oOFRiKJa#NZU05Hs5gDjF6DHAVPnGFUEGWMoZcis0DQekzJvGC9c', '_blank');
+    window.open('https://drive.google.com/file/d/1odA_0AUbnGb5CVDPMaUVo4klgZskmHH8/view?usp=drivesdk', '_blank');
 }
